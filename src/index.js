@@ -21,6 +21,16 @@ const path = require('path'); // Path, zum arbeiten mit dateipfaden
  }
 
 // - Eine Funktion um die zufällige Nummer hinter dem Namen zu generieren
+function creatRandomNumber(minNumber, maxNumber)
+{
+    //Wir erschaffen eine zufallszahl aus einer minimalen mit einer maximalen zahl
+    const num = Math.floor(Math.random() * (maxNumber - minNumber) + minNumber);
+
+    //Wir geben die zufälliger nummer zurück
+     return num;
+    
+}
+
 // - Eine Funktion mit der wir den ersten Buchstaben des jeweiligen Wortes groß schreiben (PascalCase)
 // - Eine Funktion mit der wir den benutzernamen generieren und auf die ergebnisse der anderen funktionen zugreifen
 // - Einen export, um die Applikation in einer anderen datei zu nutzen
