@@ -80,7 +80,10 @@ function createRandomUserName(maxNumber)
 
     const finalUserName = `${ capitalizeString(adj)} ${ capitalizeString(noun)} ${maxNumber !== 0 ? randomNumber : ''}`
     
-    return finalUserName ;
+     return finalUserName ;
+    
 }
 createRandomUserName(50000);
-// - Einen export, um die Applikation in einer anderen datei zu nutzen
+// - Einen export, um die Applikation in einer anderen datei zu nutzen.
+
+exports.createUserName = ( maxNumber)=> createRandomUserName(maxNumber);
